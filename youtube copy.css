@@ -1,0 +1,270 @@
+body{
+        font-size:16px;
+        color: #fff;
+        background-color: #fce4ec;
+        font-family: 'oxygen', sans-serif;
+}
+
+#header-nav {
+        background-color: #f44336;
+        border-radius: 0;
+        border:0;
+}
+
+#logo-img{
+        background: url('../youtube.jpg') no-repeat;
+        width:150px;
+        height:150px;
+        margin: 10px 15px 10px 0;
+}
+
+.navbar-brand{
+        padding-top:25px;
+}
+
+.navbar-brand h1 {      /*대문 i&youtube*/
+       font-family:sans-serif;
+       color:#a2c427;
+       font-size:1.5em;
+       text-transform: uppercase; /*항상대문자*/
+       font-weight: bold;
+       text-shadow: 1px 1px 1px #222;
+       margin-top: 0;
+       margin-bottom:0;
+       line-height: .75;
+}
+/* 링크에 파랑색 없애기 */
+.navbar-brand a:hover, .navbar-brand a:focus {text-decoration: none;}
+
+.navbar-brand p {
+        color: #000;
+        text-transform: lowercase;
+        font-size: .7em;
+        margin-top:15px;
+}
+
+.navbar-brand p span { vertical-align: middle;}
+
+
+
+.row{display:flex;
+        position: relative;}
+/* flex-flowL column nowrap; */
+
+
+.nav-item a:hover {font-size:1.2em;}
+.nav-item{font-weight:600; }
+
+.jumbtron{margin:10px;  /*대문사진*/
+          margin-right:0;} 
+
+
+
+.dropdown-menu{ background-color: tomato;
+                color:black; }
+
+
+@media (min-width:850px) 
+{.navbar-toggler {display:none;}
+.navbar1 {display:none;}
+}
+
+@media(min-width:1200px) {
+        .jumbtron {
+                background:url("../youtube22.jpg") no-repeat;
+                height:675px;
+                box-shadow: 0 0 50px #3f0c1f;
+                border: 2px solid #3f0c1f;
+        }
+}
+
+.recommend-youtube{
+        position: relative;
+        border:2px solid #3f0c1f;
+        overflow:hidden;
+        width:180px;
+        height:200px;
+        margin:0 auto 15px;
+}
+
+.recommend-youtube span {
+        position: absolute;
+        bottom:0;
+        right:0;
+        width:90%;
+        text-align: center;
+        font-size:1.2em;
+        text-transform: uppercase;
+        background-color: #000;
+        color:#fff;
+        opacity :.8;
+}
+
+h2{color:black;}
+.text-center{color:black;}
+
+body{
+        padding-right:0;
+        margin-right:0;
+}
+
+/* end header */
+
+/* 아래 3가지 사진 */
+#Recommend, #regist, #map {
+        height: 250px;
+        width: 97%;
+        margin-bottom: 15px;
+        position: relative;
+        border: 2px solid black;
+        overflow:hidden;
+}
+
+      
+#Recommend:hover, #regist:hover, #map:hover {
+        box-shadow: 0 1px 5px 1px #cccccc;
+
+}
+
+#Recommend {
+        background: url('../youtube1.jpg') no-repeat;
+        background-position: center;
+}
+
+#regist {
+        background: url('../youtube1.jpg') no-repeat;
+        background-position: center;
+} 
+
+#Recommend span, #regist span, #map span{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width:100%;
+        text-align: center;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        background-color: #000;
+        color:#fff;
+        opacity: .8;
+
+}
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+        margin-bottom: 25px;
+      }
+      .menu-item-tile hr {
+        width: 80%;
+      }
+      .menu-item-tile .menu-item-price {
+        font-size: 1.1em;
+        text-align: right;
+        margin-top: -15px;
+        margin-right: -15px;
+      }
+      .menu-item-tile .menu-item-price span {
+        font-size: .6em;
+      }
+      .menu-item-photo {
+        position: relative;
+        border: 2px solid #3F0C1F; 
+        overflow: hidden;
+        padding: 0;
+        margin-right: -15px;
+        margin-left: auto;
+        margin-bottom: 20px;
+        max-width: 250px;
+      }
+      .menu-item-photo div {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 80px;
+        background-color: #557c3e;
+        text-align: center;
+      }
+      .menu-item-description {
+        padding-right: 30px;
+      }
+      h3.menu-item-title {
+        margin: 0 0 10px;
+      }
+      .menu-item-details {
+        font-size: .9em;
+        font-style: italic;
+      }
+      /* END SINGLE CATEGORY PAGE */
+
+
+
+      @media (max-width:767px) {
+      .menu-item-photo {
+            margin-right:auto;  
+      }
+      .menu-item-tile .menu-item-price {text-align:center;}
+      .menu-item-description{text-align: center;}
+}
+
+@media (max-width:767px) and (min-width:602px){
+        #regist  {
+        width: 340px;
+        margin: 10px auto 10px;}
+        #Recommend{
+                width: 340px;
+                margin: 10px auto 10px;}
+}
+
+@media (max-width:601px){
+#regist  {
+        width: 500px;
+        margin: 10px auto 10px;}
+        #Recommend{
+                width: 500px;
+                margin: 10px auto 10px;}
+                #map {width: 500px;
+                        margin: 10px auto 10px;}
+}
+
+@media (min-width:768px){
+                #Recommend{
+                        margin-left:10px;}
+                        #map { margin-right:10px}
+        }
+
+
+
+
+
+
+        /* FOOTER */
+.panel-footer {
+        margin-top: 30px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        background-color: #222;
+        border-top: 0;
+      }
+      .panel-footer div.row {
+        margin-bottom: 35px;
+      }
+      #hours, #address {
+        line-height: 2;
+      }
+      #hours > span, #address > span {
+        font-size: 1.3em;
+      }
+      #address p {
+        color: #557c3e;
+        font-size: .8em;
+        line-height: 1.8;
+      }
+      #testimonials {
+        font-style: italic;
+      }
+      #testimonials p:nth-child(2) {
+        margin-top: 25px;
+      }
+      /* END FOOTER */
+
+
